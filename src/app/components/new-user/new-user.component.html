@@ -1,0 +1,19 @@
+
+  <div class="modal-body" style="padding: 50px;">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <span class="login100-form-title" style="padding-bottom:30px"> New User </span>
+        <div class="form-group">
+            <input type="text" formControlName="name" class="input100" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="age" class="input100" placeholder="Enter age">
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="position" class="input100" placeholder="Enter position">
+        </div>
+        <div class="form-group">
+            <input type="text" formControlName="city" class="input100" placeholder="Enter City">
+        </div>
+        <button class="login100-form-btn" (ngSubmit)="onSubmit()"> Create User </button>
+    </form>
+  </div>
